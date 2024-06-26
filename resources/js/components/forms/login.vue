@@ -52,8 +52,7 @@
     methods: {
       register(){
         axios.post('/register/registration', this.form).then(response=>{
-          console.log(response.data.email);
-          console.log(response.data.password);
+          console.log(response.data);
         }).catch(error=>{
           console.log(error.data);
           this.loading = false;
